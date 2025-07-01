@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/app/ThemeProvider/ThemeToggle";
 
 function NavigationBar() {
   return (
-    <header className="flex justify-around container items-center">
+    <header className="flex justify-around container items-center mb-16">
       <section>
         <h4>Logo</h4>
       </section>

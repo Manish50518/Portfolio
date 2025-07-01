@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import ProjectsReuseComp from "./ProjectsReuseComp";
 
 function Projects() {
   const projects = [
@@ -36,42 +37,16 @@ function Projects() {
   return (
     <div className="mt-8 mb-8">
       <section className="flex items-center gap-4 justify-center mb-8">
-        <h3 className="mb-0">
+        <h3 className="mb-0 tracking-wider">
           <span className="text-primary">#</span>projects
         </h3>
-        <div className="flex-1 h-1 bg-purple-400 opacity-50"></div>{" "}
+        <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
         <p className="mb-0 flex-1 flex justify-end mt-1">
           View all <ArrowRight className="inline-block" />
         </p>
       </section>
 
-      <section className="grid grid-cols-3 gap-5 ">
-        {projects.map((item) => (
-          <div key={item.id} className="border border-default ">
-            <Image
-              src={item.img}
-              alt={item.title}
-              width={200}
-              height={200}
-              className="w-full "
-            />
-            <p className="p-2 border-y border-default ">
-              {item.stack.join(", ")}
-            </p>
-            <div className="p-2">
-              {" "}
-              <h5>{item.title}</h5>
-              <p>{item.discription}</p>
-              <div className="flex justify-around mb-4">
-                <Button className="bg-transparent text-foreground border border-primary-subtle rounded-none px-8 ">
-                  Code
-                </Button>
-                <Button className=" rounded-none px-8 ">Demo</Button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
+      <ProjectsReuseComp data={projects} />
     </div>
   );
 }
