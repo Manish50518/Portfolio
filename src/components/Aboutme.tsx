@@ -19,7 +19,7 @@ function Aboutme() {
           View all <ArrowRight className="inline-block" />
         </p>
       </section>
-      <div className="flex gap-2">
+      <div className="flex sm:flex-row flex-col items-center gap-2">
         <section className="flex-1">
           <article className="p-1 tracking-widest ">
             <p>Hello, I’m Manish!</p>

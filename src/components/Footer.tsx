@@ -17,7 +17,7 @@ function Footer() {
   ];
   return (
     <footer className="border-t border-default p-4  w-full">
-      <div className="flex justify-between">
+      <div className="flex md:flex-row flex-col justify-between">
         <section>
           <div className="flex gap-4">
             <h5>Manish KM</h5>

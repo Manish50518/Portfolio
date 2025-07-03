@@ -130,27 +130,28 @@ function AboutMe() {
               </h3>
               <p>Who am i ?</p>
             </section>
-            <div className="flex gap-2">
-              <section className="flex-1">
+            <div className="flex md:flex-row flex-col items-center gap-2">
+              <section className="flex-1 ">
                 <article className="p-1 tracking-widest ">
                   <p>Hello, I’m Manish!</p>
                   <p>
                     {" "}
-                    I’m a self-taught Frontend Developer based in Bengaluru,
-                    India, with hands-on experience in building modern,
-                    responsive, and scalable web applications. I specialize in
-                    React.js, Next.js, and Tailwind CSS, and love transforming
-                    creative ideas into intuitive and user-friendly interfaces.
+                    I&apos;m a self-taught Frontend Developer based in
+                    Bengaluru, India, with hands-on experience in building
+                    modern, responsive, and scalable web applications. Iam
+                    specialize in React.js, Next.js, and Tailwind CSS, and love
+                    transforming creative ideas into intuitive and user-friendly
+                    interfaces.
                   </p>
                   <p>
-                    Over the past year, I’ve worked with companies like AntStack
-                    and Infotech Brain’s, where I contributed to real-world
-                    projects using tools like Next.js, TypeScript, Tailwind CSS,
-                    AWS Amplify, and Spring Boot. I’ve developed reusable and
-                    accessible UI component libraries, optimized frontend
-                    performance through efficient rendering techniques, and
-                    implemented secure authentication systems using modern best
-                    practices.
+                    Over the past year, I&apos;ve worked with companies like
+                    AntStack and Infotech Brain&apos;s, where I contributed to
+                    real-world projects using tools like Next.js, TypeScript,
+                    Tailwind CSS, AWS Amplify, and Spring Boot. I&apos;ve
+                    developed reusable and accessible UI component libraries,
+                    optimized frontend performance through efficient rendering
+                    techniques, and implemented secure authentication systems
+                    using modern best practices.
                   </p>{" "}
                   {/* <p className={`${!readMore ? "hidden" : ""}`}>
               My focus is on building pixel-perfect, responsive UIs with clean,
@@ -195,17 +196,17 @@ function AboutMe() {
           </h3>
         </section>
 
-        <section className="flex gap-4 flex-wrap items-start justify-around mb-16">
+        <section className="flex flex-col md:flex-row flex-wrap   gap-4 mb-16">
           {skills.map((item, id) => (
             <div
               key={id}
-              className="border border-default w-[178px] 
-            h-auto"
+              className="border border-default w-full sm:w-[240px] md:w-[200px] h-auto"
             >
-              <div className="">
-                {" "}
-                <h5 className="border-b border-default p-2">{item.title}</h5>
-                <p className="p-2">{item.items.join(", ")}</p>
+              <div>
+                <h5 className="border-b border-default p-2 font-semibold">
+                  {item.title}
+                </h5>
+                <p className="p-2 text-sm">{item.items.join(", ")}</p>
               </div>
             </div>
           ))}
@@ -230,27 +231,29 @@ function AboutMe() {
         </section>
 
         <section className="flex relative">
-          <div className="flex gap-4 flex-wrap flex-2">
+          <div className="flex gap-4 md:flex-row flex-wrap flex-col flex-2">
             {funFacts.map((item, id) => (
               <div key={id} className="border border-default p-3 ">
                 <p className="text-md mb-0">{item.text}</p>
               </div>
             ))}
           </div>
-          <Image
-            src={"logo.svg"}
-            alt="logo"
-            width={113}
-            height={113}
-            className="absolute top-0 right-10"
-          />
-          <Image
-            src={"Rectangle 24.svg"}
-            alt="rectangle img"
-            width={52}
-            height={52}
-            className="absolute top-60 right-12"
-          />
+          <div className="hidden md:block">
+            <Image
+              src={"logo.svg"}
+              alt="logo"
+              width={113}
+              height={113}
+              className="absolute top-0 right-10 "
+            />
+            <Image
+              src={"Rectangle 24.svg"}
+              alt="rectangle img"
+              width={52}
+              height={52}
+              className="absolute top-60 right-12"
+            />
+          </div>
         </section>
       </section>
     </div>

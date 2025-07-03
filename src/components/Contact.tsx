@@ -52,18 +52,18 @@ function Contact() {
         </p>
       </section>
 
-      <div className="flex">
+      <div className="flex sm:flex-row flex-col">
         <section className="flex-1">
           <p className="tracking-wider">
-            I'm currently open to both full-time roles and freelance
-            opportunities in frontend development. If you're hiring or have a
-            project that needs a passionate developer skilled in React, Next.js,
-            and Tailwind CSS, feel free to reach out. I'd love to connect and
-            collaborate!
+            I&#39;m currently open to both full-time roles and freelance
+            opportunities in frontend development. If you&#39;re hiring or have
+            a project that needs a passionate developer skilled in React,
+            Next.js, and Tailwind CSS, feel free to reach out. I&#39;d love to
+            connect and collaborate!
           </p>
         </section>
         <section className="flex-1">
-          <div className="flex justify-end">
+          <div className="flex  sm:justify-end justify-center">
             <div className="p-4 border border-default inline-block">
               <h5 className="mb-6">Let’s connect!</h5>
               <ul className="grid grid-cols-2 gap-3">

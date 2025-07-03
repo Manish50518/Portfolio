@@ -35,11 +35,11 @@ function Contacts() {
       <section className="flex ">
         <div className="flex-1">
           <p>
-            I'm a front-end developer with real-world experience in startups,
-            currently open to full-time roles. If you're hiring, collaborating,
-            or just want to connect — don't hesitate to reach out. I'm always
-            excited to work on meaningful projects and solve real-world problems
-            with code.
+            I&#39;m a front-end developer with real-world experience in
+            startups, currently open to full-time roles. If you&#39;re hiring,
+            collaborating, or just want to connect — don&#39;t hesitate to reach
+            out. I&#39;m always excited to work on meaningful projects and solve
+            real-world problems with code.
           </p>
         </div>
         <section className="flex-1 flex gap-4 items-start">

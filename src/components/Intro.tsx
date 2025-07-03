@@ -32,9 +32,11 @@ function Intro() {
             <h4 className="border border-default p-6 mb-0">
               With great power comes great electricity bill
             </h4>
-            <h3 className="absolute -top-3 left-4 bg-three px-1 mb-0">"</h3>
+            <h3 className="absolute -top-3 left-4 bg-three px-1 mb-0">
+              &quot;
+            </h3>
             <h3 className="absolute -bottom-6 left-120 bg-three px-1 mb-0">
-              "
+              &quot;
             </h3>
           </section>
           <section className="flex justify-end">
