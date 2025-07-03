@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import Link from "next/link";
 
 function Aboutme() {
   const [readMore, setReadMore] = useState(false);
@@ -46,12 +47,21 @@ function Aboutme() {
               Next.js, I’m always eager to push the boundaries of what frontend
               can do.
             </p>
-            <Button
-              onClick={() => setReadMore(!readMore)}
-              className="bg-transparent text-foreground border border-primary-subtle rounded-none px-8"
-            >
-              {readMore ? "read less" : "read more"}
-            </Button>
+            <div className="flex gap-5">
+              <Button
+                onClick={() => setReadMore(!readMore)}
+                className="bg-transparent text-foreground border border-primary-subtle rounded-none px-8 "
+              >
+                {readMore ? "read less" : "read more"}
+              </Button>
+              <Link
+                href={"./KM_Manish_Resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="rounded-none px-8">View Resume</Button>
+              </Link>
+            </div>
           </article>
         </section>
         <section className="flex-1">

@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 function Intro() {
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex sm:flex-row flex-col items-center">
         <section>
           <h2>
             Manish is a <span className="text-primary ">web designer</span> and{" "}

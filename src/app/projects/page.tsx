@@ -40,6 +40,23 @@ function ProjectsPage() {
     },
     {
       id: 5,
+      title: "Fast React Pizza",
+      discription:
+        "Fast React Pizza is a modern pizza ordering application that allows users to customize their pizza orders",
+      img: "bitcoin.svg",
+      stack: [
+        "React.js",
+        "Tailwind CSS",
+        "JavaScript",
+        "Router",
+        "Redux",
+        "Reducer",
+      ],
+      git: "https://github.com/Manish50518/fast-react-pizza",
+      demo: "https://fast-react-pizza-vert.vercel.app/",
+    },
+    {
+      id: 6,
       title: "Uprise-Quiz",
       discription: "E commers application using CURD operation",
       img: "bitcoin.svg",
@@ -61,10 +78,61 @@ function ProjectsPage() {
       id: 1,
       title: "Customizable-Tic-Tac-Toe",
       discription: "E commers application using CURD operation",
-
       stack: ["Vanilla.js", "External CSS"],
+      git: "https://github.com/Manish50518/Zysk-Technologies",
+      demo: "https://zysk-technologies-psi.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Zysk-Technologies",
+      discription:
+        "React-based UI project developed as part of the assignment for Zysk Technologies Private Limited.",
+      stack: ["JavaScript", "Tailwind CSS", "React.js"],
+      git: "https://github.com/Manish50518/Zysk-Technologies",
+      demo: "https://zysk-technologies-psi.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Bankist",
+      discription:
+        "Dojo Block is a web application that allows users to seamlessly add, delete, and edit blog posts.",
+      stack: ["JavaScript", "React.js", "External CSS"],
+      git: "https://github.com/Manish50518/Bankist",
+      demo: "https://bankist-theta-two.vercel.app/",
+    },
+
+    {
+      id: 4,
+      title: "Pomodoro Timer",
+      discription: "E commers application using CURD operation",
+      stack: ["Vanilla.js", "External CSS"],
+      git: "https://github.com/Manish50518/pomodoro-timer",
+      demo: "https://pomodoro-timer-delta-roan.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Practice-HTML",
+      discription: "E commers application using CURD operation",
+      stack: ["HTML", "CSS"],
       git: "https://github.com/Manish50518/Uprise-Quiz-State",
       demo: "https://uprise-quiz-state.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Write To-Do",
+      discription: "TO-DO application",
+      stack: ["Vanilla.js", "External CSS"],
+      git: "https://github.com/Manish50518/write-todo",
+      demo: "https://write-todo-seven.vercel.app/",
+    },
+    {
+      id: 7,
+      title: "Guess-my-number",
+      discription:
+        "It is small game application where you can guess the random number by give the number as input.",
+      stack: ["Vanilla.js", "External CSS"],
+      git: "https://github.com/Manish50518/Guess-my-number",
+      demo: "",
     },
   ];
 
@@ -78,7 +146,7 @@ function ProjectsPage() {
         <p>List of my projects</p>
       </section>
 
-      <section>
+      <section className="mb-16">
         <h2 className="mb-10">
           <span className="text-primary ">#</span>complete-apps
         </h2>

@@ -1,87 +1,128 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Skills() {
   const skills = [
     {
       title: "Languages",
-      items: ["TypeScript", "JavaScript", "Java", "Python"],
+      items: [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Python",
+        "SQL",
+        "HTML",
+        "CSS",
+      ],
+    },
+    {
+      title: "Frameworks & Libraries",
+      items: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "ShadCN/UI",
+        "React Query",
+        "Jest",
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      items: [
+        "VS Code",
+        "GitHub",
+        "Figma",
+        "Jira",
+        "AWS Amplify",
+        "AWS Cognito",
+        "Postman",
+        "NPM",
+        "Prettier",
+      ],
     },
     {
       title: "Databases",
-      items: ["Supabase", "SQLite", "PostgreSQL", "Mongo"],
+      items: ["Supabase", "MongoDB", "MySQL", "PostgreSQL"],
     },
     {
-      title: "Tools",
-      items: ["VSCode", "Linux", "Figma", "Git", "GitHub"],
-    },
-    {
-      title: "Other",
-      items: ["HTML", "CSS", "SCSS", "REST"],
-    },
-    {
-      title: "Frameworks",
-      items: ["React JS", "Next JS"],
+      title: "Practices & Methodologies",
+      items: [
+        "Agile",
+        "RESTful APIs",
+        "Server-Side Rendering",
+        "Client-Side Rendering",
+      ],
     },
   ];
 
+  const router = useRouter();
+
   return (
-    <div className="mb-8">
+    <div className="mb-8 px-4 sm:px-6 md:px-8">
       <section className="flex items-center gap-4 justify-center mb-8">
         <h3 className="mb-0 tracking-wider">
-          <span className="text-primary">#</span>skills
+          <span className="text-primary">#</span>skils
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
-        <p className="mb-0 flex-1 flex justify-end mt-1">
+        <p
+          className="mb-0 flex-1 flex justify-end mt-1"
+          onClick={() => router.push("/projects")}
+        >
           View all <ArrowRight className="inline-block" />
         </p>
       </section>
-      <div className="flex ">
-        <section className="relative bo flex-1">
+      <div className="flex flex-col md:flex-row gap-6">
+        <section className="relative flex-1 hidden md:block">
           <Image
-            src={"dot.svg"}
+            src="/dot.svg"
             alt="dot img"
-            width={63}
-            height={63}
-            className="absolute top-20"
+            width={48}
+            height={48}
+            className="absolute top-16 left-4 w-12 h-12"
           />
           <Image
-            src={"Rectangle 24.svg"}
+            src="/Rectangle 24.svg"
             alt="rectangle img"
-            width={86}
-            height={86}
-            className="absolute left-50"
+            width={64}
+            height={64}
+            className="absolute top-32 left-16 w-16 h-16"
           />
           <Image
-            src={"logo.svg"}
+            src="/logo.svg"
             alt="logo"
-            width={113}
-            height={113}
-            className="absolute top-50.5 left-3"
+            width={80}
+            height={80}
+            className="absolute top-48 left-8 w-20 h-20"
           />
           <Image
-            src={"dot.svg"}
+            src="/dot.svg"
             alt="dot img"
-            width={63}
-            height={63}
-            className="absolute top-40 left-40"
+            width={48}
+            height={48}
+            className="absolute top-64 left-24 w-12 h-12"
           />
           <Image
-            src={"Rectangle 24.svg"}
+            src="/Rectangle 24.svg"
             alt="rectangle img"
-            width={52}
-            height={52}
-            className="absolute top-60 left-72"
+            width={40}
+            height={40}
+            className="absolute top-80 left-32 w-10 h-10"
           />
         </section>
-        <section className="flex gap-4 flex-wrap flex-2 justify-end">
+        <section className="flex-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {skills.map((item, id) => (
-            <div key={id} className="border border-default w-[178px] ">
-              <div className="">
-                {" "}
-                <h5 className="border-b border-default p-2">{item.title}</h5>
-                <p className="p-2">{item.items.join(", ")}</p>
-              </div>
+            <div
+              key={id}
+              className="border border-default rounded-md shadow-sm"
+            >
+              <h5 className="border-b border-default p-3 text-base sm:text-lg font-medium">
+                {item.title}
+              </h5>
+              <p className="p-3 text-sm sm:text-base text-muted-foreground">
+                {item.items.join(", ")}
+              </p>
             </div>
           ))}
         </section>

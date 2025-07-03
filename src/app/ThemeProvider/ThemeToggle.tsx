@@ -62,6 +62,7 @@ export function ThemeToggle() {
       onClick={cycleTheme}
       title={`Current theme: ${getThemeLabel()}. Click to cycle themes.`}
       style={{ minWidth: "2.5rem", minHeight: "2.5rem" }}
+      className="bg-transparent border-none"
     >
       {getIcon()}
     </Button>

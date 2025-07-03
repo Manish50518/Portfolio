@@ -1,7 +1,7 @@
+"use client";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { Button } from "./ui/button";
 import ProjectsReuseComp from "./ProjectsReuseComp";
+import { useRouter } from "next/navigation";
 
 function Projects() {
   const projects = [
@@ -34,6 +34,8 @@ function Projects() {
     },
   ];
 
+  const router = useRouter();
+
   return (
     <div className="mt-8 mb-8">
       <section className="flex items-center gap-4 justify-center mb-8">
@@ -41,7 +43,10 @@ function Projects() {
           <span className="text-primary">#</span>projects
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
-        <p className="mb-0 flex-1 flex justify-end mt-1">
+        <p
+          className="mb-0 flex-1 flex justify-end mt-1"
+          onClick={() => router.push("/projects")}
+        >
           View all <ArrowRight className="inline-block" />
         </p>
       </section>

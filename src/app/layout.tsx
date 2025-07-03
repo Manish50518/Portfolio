@@ -27,8 +27,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* <div className="w-[1024px] mx-auto"> */}
           <NavigationBar />
           {children}
+          {/* </div> */}
           <Footer />
         </ThemeProvider>
       </body>
