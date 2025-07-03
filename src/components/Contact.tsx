@@ -55,11 +55,11 @@ function Contact() {
       <div className="flex">
         <section className="flex-1">
           <p className="tracking-wider">
-            I&apos;m currently open to both full-time roles and freelance
-            opportunities in frontend development. If you&apos;re hiring or have
-            a project that needs a passionate developer skilled in React,
-            Next.js, and Tailwind CSS, feel free to reach out. I&apos;d love to
-            connect and collaborate!
+            I'm currently open to both full-time roles and freelance
+            opportunities in frontend development. If you're hiring or have a
+            project that needs a passionate developer skilled in React, Next.js,
+            and Tailwind CSS, feel free to reach out. I'd love to connect and
+            collaborate!
           </p>
         </section>
         <section className="flex-1">
