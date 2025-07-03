@@ -4,10 +4,11 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import { MdPhoneEnabled } from "react-icons/md";
+import React from "react";
 
 interface ConnectItem {
   type: string;
-  logo: JSX.Element;
+  logo: React.ReactElement;
   link: string;
 }
 
