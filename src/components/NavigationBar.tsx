@@ -22,7 +22,9 @@ function NavigationBar() {
     <header className="w-full px-4 py-4  mb-6">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <Image src={"./mport.svg"} alt="logo" width={50} height={50} />
+          <Link href={"/"} className="hover:cursor-pointer">
+            <Image src={"./mport.svg"} alt="logo" width={50} height={50} />
+          </Link>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
