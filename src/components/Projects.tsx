@@ -44,7 +44,7 @@ function Projects() {
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
         <p
-          className="mb-0 flex-1 flex justify-end mt-1"
+          className="mb-0 flex-1 flex justify-end mt-1 hover:underline cursor-pointer"
           onClick={() => router.push("/projects")}
         >
           View all <ArrowRight className="inline-block" />

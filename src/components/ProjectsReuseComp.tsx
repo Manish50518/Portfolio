@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
 
 interface Project {
   id: number;
@@ -21,7 +22,7 @@ function ProjectsReuseComp({ data }: ProjectsProps) {
       {data.map((item) => (
         <div
           key={item.id}
-          className="border border-default rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          className="border border-default  overflow-hidden shadow-sm hover:shadow-md transition-shadow"
         >
           {item.img && (
             <div className="relative w-full h-48 sm:h-56 md:h-64">
@@ -46,14 +47,15 @@ function ProjectsReuseComp({ data }: ProjectsProps) {
               <Link href={item.git}>
                 <Button
                   variant="outline"
-                  className="w-full sm:w-auto px-6 py-2 text-foreground border-primary-subtle rounded-md"
+                  className="w-full sm:w-auto px-6 py-2 text-foreground border-primary-subtle rounded-none"
                 >
-                  Code
+                  Code <BiLinkExternal />
                 </Button>
               </Link>
               <Link href={item.demo}>
-                <Button className="w-full sm:w-auto px-6 py-2 rounded-md">
+                <Button className="w-full sm:w-auto px-6 py-2 rounded-none">
                   Demo
+                  <BiLinkExternal />
                 </Button>
               </Link>
             </div>

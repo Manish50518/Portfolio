@@ -376,13 +376,14 @@
   }
 
   body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-feature-settings: "rlig" 1, "calt" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 1024px;
-    margin: 0 auto;
   }
 
   /* Typography */

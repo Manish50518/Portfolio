@@ -67,8 +67,8 @@ function Skills() {
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
         <p
-          className="mb-0 flex-1 flex justify-end mt-1"
-          onClick={() => router.push("/projects")}
+          className="mb-0 flex-1 flex justify-end mt-1  hover:underline cursor-pointer"
+          onClick={() => router.push("/aboutme")}
         >
           View all <ArrowRight className="inline-block" />
         </p>
@@ -80,43 +80,40 @@ function Skills() {
             alt="dot img"
             width={48}
             height={48}
-            className="absolute top-16 left-4 w-12 h-12"
+            className="absolute top-0 left-4 w-12 h-12"
           />
           <Image
             src="/Rectangle 24.svg"
             alt="rectangle img"
             width={64}
             height={64}
-            className="absolute top-32 left-16 w-16 h-16"
+            className="absolute top-25 left-30 w-16 h-16"
           />
           <Image
             src="/logo.svg"
             alt="logo"
             width={80}
             height={80}
-            className="absolute top-48 left-8 w-20 h-20"
+            className="absolute top-55 left-8 w-20 h-20"
           />
           <Image
             src="/dot.svg"
             alt="dot img"
             width={48}
             height={48}
-            className="absolute top-64 left-24 w-12 h-12"
+            className="absolute top-64 right-0 w-12 h-12"
           />
           <Image
             src="/Rectangle 24.svg"
             alt="rectangle img"
             width={40}
             height={40}
-            className="absolute top-80 left-32 w-10 h-10"
+            className="absolute top-90 left-32 w-10 h-10"
           />
         </section>
-        <section className="flex-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <section className="flex-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
           {skills.map((item, id) => (
-            <div
-              key={id}
-              className="border border-default rounded-md shadow-sm"
-            >
+            <div key={id} className="border border-default">
               <h5 className="border-b border-default p-3 text-base sm:text-lg font-medium">
                 {item.title}
               </h5>

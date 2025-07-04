@@ -24,17 +24,19 @@ function Contacts() {
     { type: "WhatsApp", logo: <FaWhatsapp />, link: "8660674935" },
   ];
   return (
-    <div className="mb-16">
-      <section className="flex flex-col items-start gap-4  mb-8">
-        <h3 className="mb-0 tracking-wider">
+    <div className="mb-16  w-full max-w-6xl mx-auto">
+      <section className="flex flex-col items-start gap-2 mb-8">
+        <h3 className="tracking-wider text-lg sm:text-xl">
           <span className="text-primary">/</span>contacts
         </h3>
-        <p>Who am i ?</p>
+        <p className="text-sm sm:text-base">Who am I?</p>
       </section>
 
-      <section className="flex ">
+      {/* Content Section */}
+      <section className="flex flex-col md:flex-row gap-8 mb-10">
+        {/* Left Text */}
         <div className="flex-1">
-          <p>
+          <p className="leading-relaxed text-sm sm:text-base">
             I&#39;m a front-end developer with real-world experience in
             startups, currently open to full-time roles. If you&#39;re hiring,
             collaborating, or just want to connect — don&#39;t hesitate to reach
@@ -42,70 +44,71 @@ function Contacts() {
             real-world problems with code.
           </p>
         </div>
-        <section className="flex-1 flex gap-4 items-start">
-          <div className="flex justify-end">
-            <div className="p-3  border border-default inline-block ">
-              <h5 className="mb-6 ">Message me here</h5>
-              <ul className="flex flex-col gap-3">
-                {message.map((item, id) => (
-                  <li
-                    key={id}
-                    className="list-none flex gap-3 cursor-pointer text-secondary-foreground"
+
+        {/* Right Cards */}
+        <section className="flex-1 flex flex-col sm:flex-row gap-6 items-start">
+          {/* Message me here */}
+          <div className="p-4 border border-default w-full sm:w-1/2">
+            <h5 className="mb-4 font-medium">Message me here</h5>
+            <ul className="flex flex-col gap-3">
+              {message.map((item, id) => (
+                <li key={id} className="flex gap-3 text-secondary-foreground">
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 items-center"
                   >
-                    <Link
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex gap-3"
-                    >
-                      <h4>{item.logo}</h4>
-                      <p className="mb-0">{item.type}</p>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    <h4>{item.logo}</h4>
+                    <p className="mb-0 text-sm">{item.type}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="flex justify-end">
-            <div className="p-4  border border-default inline-block">
-              <h5 className="mb-6 ">Let’s connect!</h5>
-              <ul className="grid grid-cols-2 gap-3">
-                {connect.map((item, id) => (
-                  <li
-                    key={id}
-                    className="list-none flex gap-3 cursor-pointer text-secondary-foreground"
+
+          {/* Let’s connect */}
+          <div className="p-4 border border-default w-full sm:w-1/2">
+            <h5 className="mb-4 font-medium">Let’s connect!</h5>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {connect.map((item, id) => (
+                <li key={id} className="flex gap-3 text-secondary-foreground">
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 items-center"
                   >
-                    <Link
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex gap-3"
-                    >
-                      <h4>{item.logo}</h4>
-                      <p className="mb-0">{item.type}</p>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    <h4>{item.logo}</h4>
+                    <p className="mb-0 text-sm">{item.type}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       </section>
 
-      <section>
-        {" "}
-        <section className="flex flex-col items-start gap-4  mb-4">
-          <h3 className="mb-0 tracking-wider">
-            <span className="text-primary">#</span>all-media
-          </h3>
-        </section>
-        <div className="flex gap-4 ">
-          <Link href={"https://www.linkedin.com/in/manish-naik-km-6b1892287/"}>
+      {/* All Media Section */}
+      <section className="flex flex-col items-start gap-4">
+        <h3 className="tracking-wider text-lg sm:text-xl">
+          <span className="text-primary">#</span>all-media
+        </h3>
+        <div className="flex gap-4 text-xl">
+          <Link
+            href={"https://www.linkedin.com/in/manish-naik-km-6b1892287/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4 className="cursor-pointer">
               <FaLinkedinIn />
             </h4>
           </Link>
-          <Link href={"https://github.com/Manish50518"}>
+          <Link
+            href={"https://github.com/Manish50518"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4 className="cursor-pointer">
               <IoLogoGithub />
             </h4>

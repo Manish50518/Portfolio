@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 function Intro() {
+  const route = useRouter();
   return (
     <div>
       <div className="flex sm:flex-row flex-col items-center">
@@ -13,7 +16,10 @@ function Intro() {
           <p>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <Button className="bg-transparent text-forground border-2 border-primary-subtle rounded-b-sm">
+          <Button
+            className="bg-transparent text-forground border-2 border-primary-subtle rounded-b-sm"
+            onClick={() => route.push("/contacts")}
+          >
             Contact me!!
           </Button>
         </section>
@@ -27,7 +33,7 @@ function Intro() {
         </section>
       </div>
       <div className="flex justify-center">
-        <div className="inline-block">
+        <div className="md:inline-block hidden">
           <section className="relative ">
             <h4 className="border border-default p-6 mb-0">
               With great power comes great electricity bill

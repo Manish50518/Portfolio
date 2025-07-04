@@ -1,3 +1,4 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
@@ -5,6 +6,7 @@ import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import { MdPhoneEnabled } from "react-icons/md";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 interface ConnectItem {
   type: string;
@@ -13,6 +15,8 @@ interface ConnectItem {
 }
 
 function Contact() {
+  const route = useRouter();
+
   const connect: ConnectItem[] = [
     {
       type: "LinkedIn",
@@ -48,7 +52,10 @@ function Contact() {
           <span className="text-primary">#</span>contacts
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>
-        <p className="mb-0 flex-1 flex justify-end mt-1">
+        <p
+          className="mb-0 flex-1 flex justify-end mt-1  hover:underline cursor-pointer"
+          onClick={() => route.push("/contacts")}
+        >
           View all <ArrowRight className="inline-block" />
         </p>
       </section>
