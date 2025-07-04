@@ -16,12 +16,20 @@ function Contacts() {
       logo: <IoLogoGithub />,
       link: "https://github.com/Manish50518",
     },
-    { type: "Phone", logo: <MdPhoneEnabled />, link: "tel:+8660674935" },
+    { type: "Phone", logo: <MdPhoneEnabled />, link: "tel:+91 8660674935" },
   ];
 
   const message = [
-    { type: "Gmail", logo: <BiLogoGmail />, link: "kmmanish5051@gmil.com" },
-    { type: "WhatsApp", logo: <FaWhatsapp />, link: "8660674935" },
+    {
+      type: "Gmail",
+      logo: <BiLogoGmail />,
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=kmmanish5051@gmail.com",
+    },
+    {
+      type: "WhatsApp",
+      logo: <FaWhatsapp />,
+      link: "https://wa.me/+8660674935",
+    },
   ];
   return (
     <div className="mb-16  w-full max-w-6xl mx-auto">

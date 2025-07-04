@@ -30,7 +30,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="max-w-[1024px] mx-auto">
+          <div className="max-w-[1024px] mx-auto p-2">
             <NavigationBar />
             {children}
           </div>

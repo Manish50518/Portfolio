@@ -10,7 +10,7 @@ interface Project {
   img?: string;
   stack: string[];
   git: string;
-  demo: string;
+  demo?: string;
 }
 interface ProjectsProps {
   data: Project[];
@@ -52,12 +52,14 @@ function ProjectsReuseComp({ data }: ProjectsProps) {
                   Code <BiLinkExternal />
                 </Button>
               </Link>
-              <Link href={item.demo}>
-                <Button className="w-full sm:w-auto px-6 py-2 rounded-none">
-                  Demo
-                  <BiLinkExternal />
-                </Button>
-              </Link>
+              {item.demo && (
+                <Link href={item.demo}>
+                  <Button className="w-full sm:w-auto px-6 py-2 rounded-none">
+                    Demo
+                    <BiLinkExternal />
+                  </Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>

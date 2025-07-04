@@ -5,7 +5,8 @@ function ProjectsPage() {
     {
       id: 1,
       title: "Task Manager",
-      discription: "Fullstack task managemet using CURD operation",
+      discription:
+        "A responsive full-stack task management app with complete CRUD functionality.",
       stack: ["Next.js", "Tailwind CSS", "JavaScript", "Spring Boot", "My SQL"],
       img: "5.svg",
       git: "https://github.com/Manish50518/Task-Manager-Fullstack",
@@ -23,7 +24,8 @@ function ProjectsPage() {
     {
       id: 3,
       title: "E-COM",
-      discription: "E commers application using CURD operation",
+      discription:
+        "A responsive e-commerce app with a dynamic cart and seamless shopping experience.",
       img: "6.svg",
       stack: ["React.js", "Tailwind CSS", "JavaScript", "SupaBase", "Redux"],
       git: "https://github.com/Manish50518/E-com",
@@ -32,7 +34,8 @@ function ProjectsPage() {
     {
       id: 4,
       title: "Google keep clone",
-      discription: "E commers application using CURD operation",
+      discription:
+        "It's clone of Google Keep where you and add,archive and delete the task",
       img: "2.svg",
       stack: ["React.js", "Tailwind CSS", "JavaScript", "Router", "Redux"],
       git: "https://github.com/Manish50518/Keep-clone",
@@ -58,7 +61,8 @@ function ProjectsPage() {
     {
       id: 6,
       title: "Uprise-Quiz",
-      discription: "E commers application using CURD operation",
+      discription:
+        "A React-based quiz app to evaluate users, with mock API data and structured state management.",
       img: "3.svg",
       stack: [
         "React.js",
@@ -77,10 +81,11 @@ function ProjectsPage() {
     {
       id: 1,
       title: "Customizable-Tic-Tac-Toe",
-      discription: "E commers application using CURD operation",
+      discription:
+        "Customizable Tic-Tac-Toe is a game where users can customize the number of rows and columns.",
       stack: ["Vanilla.js", "External CSS"],
-      git: "https://github.com/Manish50518/Zysk-Technologies",
-      demo: "https://zysk-technologies-psi.vercel.app/",
+      git: "https://github.com/github.com/Manish50518/Customizable-Tic-Tac-Toe/Zysk-Technologies",
+      demo: "https://zysk-https://customizable-tic-tac-toe.vercel.app/-psi.vercel.app/",
     },
     {
       id: 2,
@@ -95,7 +100,7 @@ function ProjectsPage() {
       id: 3,
       title: "Bankist",
       discription:
-        "Dojo Block is a web application that allows users to seamlessly add, delete, and edit blog posts.",
+        "Bankist is a React app for user registration, login, and basic banking operations, built with JavaScript and CSS.",
       stack: ["JavaScript", "React.js", "External CSS"],
       git: "https://github.com/Manish50518/Bankist",
       demo: "https://bankist-theta-two.vercel.app/",
@@ -104,7 +109,8 @@ function ProjectsPage() {
     {
       id: 4,
       title: "Pomodoro Timer",
-      discription: "E commers application using CURD operation",
+      discription:
+        "Pomodoro Timer is a web app that helps users boost productivity by working in focused intervals with short breaks.",
       stack: ["Vanilla.js", "External CSS"],
       git: "https://github.com/Manish50518/pomodoro-timer",
       demo: "https://pomodoro-timer-delta-roan.vercel.app/",
@@ -112,15 +118,16 @@ function ProjectsPage() {
     {
       id: 5,
       title: "Practice-HTML",
-      discription: "E commers application using CURD operation",
+      discription:
+        "A beginner-level project where I practiced the fundamentals of HTML and CSS during the initial phase of my frontend learning.",
       stack: ["HTML", "CSS"],
-      git: "https://github.com/Manish50518/Uprise-Quiz-State",
-      demo: "https://uprise-quiz-state.vercel.app/",
+      git: "https://github.com/Manish50518/Practice-HTML",
     },
     {
       id: 6,
       title: "Write To-Do",
-      discription: "TO-DO application",
+      discription:
+        "Write To-Do is a simple task manager that lets users add, edit, and delete tasks to stay organized.",
       stack: ["Vanilla.js", "External CSS"],
       git: "https://github.com/Manish50518/write-todo",
       demo: "https://write-todo-seven.vercel.app/",
@@ -132,7 +139,6 @@ function ProjectsPage() {
         "It is small game application where you can guess the random number by give the number as input.",
       stack: ["Vanilla.js", "External CSS"],
       git: "https://github.com/Manish50518/Guess-my-number",
-      demo: "",
     },
   ];
 

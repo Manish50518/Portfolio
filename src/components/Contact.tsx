@@ -41,7 +41,7 @@ function Contact() {
     {
       type: "Phone",
       logo: <MdPhoneEnabled />,
-      link: "tel:+8660674935",
+      link: "tel:+91 8660674935",
     },
   ];
 

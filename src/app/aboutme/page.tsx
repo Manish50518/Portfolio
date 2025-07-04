@@ -152,20 +152,7 @@ function AboutMe() {
                     optimized frontend performance through efficient rendering
                     techniques, and implemented secure authentication systems
                     using modern best practices.
-                  </p>{" "}
-                  {/* <p className={`${!readMore ? "hidden" : ""}`}>
-              My focus is on building pixel-perfect, responsive UIs with clean,
-              maintainable code. Whether it’s building dynamic forms,
-              integrating REST APIs, or setting up SSR and CI/CD pipelines with
-              Next.js, I’m always eager to push the boundaries of what frontend
-              can do.
-            </p> */}
-                  {/* <Button
-              onClick={() => setReadMore(!readMore)}
-              className="bg-transparent text-foreground border border-primary-subtle rounded-none px-8"
-            >
-              {readMore ? "read less" : "read more"}
-            </Button> */}
+                  </p>
                   <Link
                     href={"./KM_Manish_Resume.pdf"}
                     target="_blank"
@@ -244,14 +231,14 @@ function AboutMe() {
               alt="logo"
               width={113}
               height={113}
-              className="absolute top-0 right-10 "
+              className="absolute top-10 right-10 "
             />
             <Image
               src={"Rectangle 24.svg"}
               alt="rectangle img"
               width={52}
               height={52}
-              className="absolute top-60 right-12"
+              className="absolute top-70 right-9"
             />
           </div>
         </section>
