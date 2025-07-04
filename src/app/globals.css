@@ -376,9 +376,6 @@
   }
 
   body {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 1rem;
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-feature-settings: "rlig" 1, "calt" 1;

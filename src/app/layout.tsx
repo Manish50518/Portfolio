@@ -9,8 +9,11 @@ import NavigationBar from "@/components/NavigationBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js Starter with shadcn/ui",
-  description: "A modern Next.js starter with shadcn/ui and theme support",
+  title: "KM Portfolio",
+  description: "",
+  icons: {
+    icon: "/mport.svg",
+  },
 };
 
 export default function RootLayout({
@@ -27,10 +30,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <div className="w-[1024px] mx-auto"> */}
-          <NavigationBar />
-          {children}
-          {/* </div> */}
+          <div className="max-w-[1024px] mx-auto">
+            <NavigationBar />
+            {children}
+          </div>
           <Footer />
         </ThemeProvider>
       </body>
