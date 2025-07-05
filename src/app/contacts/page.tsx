@@ -34,15 +34,13 @@ function Contacts() {
   return (
     <div className="mb-16  w-full max-w-6xl mx-auto">
       <section className="flex flex-col items-start gap-2 mb-8">
-        <h3 className="tracking-wider text-lg sm:text-xl">
+        <h2 className=" ">
           <span className="text-primary">/</span>contacts
-        </h3>
-        <p className="text-sm sm:text-base">Who am I?</p>
+        </h2>
+        <p className="sm:text-base">Who am i ?</p>
       </section>
 
-      {/* Content Section */}
       <section className="flex flex-col md:flex-row gap-8 mb-10">
-        {/* Left Text */}
         <div className="flex-1">
           <p className="leading-relaxed text-sm sm:text-base">
             I&#39;m a front-end developer with real-world experience in
@@ -53,9 +51,7 @@ function Contacts() {
           </p>
         </div>
 
-        {/* Right Cards */}
         <section className="flex-1 flex flex-col sm:flex-row gap-6 items-start">
-          {/* Message me here */}
           <div className="p-4 border border-default w-full sm:w-1/2">
             <h5 className="mb-4 font-medium">Message me here</h5>
             <ul className="flex flex-col gap-3">
@@ -75,7 +71,6 @@ function Contacts() {
             </ul>
           </div>
 
-          {/* Let’s connect */}
           <div className="p-4 border border-default w-full sm:w-1/2">
             <h5 className="mb-4 font-medium">Let’s connect!</h5>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -97,7 +92,6 @@ function Contacts() {
         </section>
       </section>
 
-      {/* All Media Section */}
       <section className="flex flex-col items-start gap-4">
         <h3 className="tracking-wider text-lg sm:text-xl">
           <span className="text-primary">#</span>all-media

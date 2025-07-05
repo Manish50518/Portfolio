@@ -125,9 +125,9 @@ function AboutMe() {
         <div>
           <div className="mb-16">
             <section className="flex flex-col items-start gap-4  mb-8">
-              <h3 className="mb-0 tracking-wider">
+              <h2 className="">
                 <span className="text-primary">/</span>about-me
-              </h3>
+              </h2>
               <p>Who am i ?</p>
             </section>
             <div className="flex md:flex-row flex-col items-center gap-2">
