@@ -4,6 +4,41 @@ import Link from "next/link";
 import * as SiIcons from "react-icons/si";
 
 function AboutMe() {
+  const experiences = [
+    {
+      company: "AntStack",
+      role: "Frontend Developer Intern",
+      location: "Bengaluru, India",
+      duration: "Feb 2025 - May 2025",
+      logo: "/Symbol_dark.png",
+      link: "https://www.linkedin.com/company/antstackio/posts/?feedView=all",
+      responsibilities: [
+        "Developed and maintained scalable web applications using Next.js and TypeScript.",
+        "Created dynamic, reusable form components using React Hook Form with schema validation via Zod.",
+        "Built advanced UI features and data tables using TanStack Table and TanStack Form.",
+        "Designed and styled components using ShadCN/UI with Tailwind CSS, aligned with design system and accessibility standards.",
+        "Integrated AWS Amplify Authentication for email/password and social login (Google OAuth).",
+        "Worked in an Agile team environment, actively participating in sprint planning and managing Jira tickets.",
+        "Collaborated with UI/UX designers and backend developers to implement new features and optimize app performance.",
+      ],
+    },
+    {
+      company: "Infotech Brain's",
+      role: "React Developer Intern",
+      location: "Pune, India",
+      duration: "Dec 2024 - Feb 2025",
+      logo: "/infotechbrains_logo.jpeg",
+      link: "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all",
+      responsibilities: [
+        "Contributed to building responsive web applications using React.js and Next.js.",
+        "Developed reusable UI components and interactive pages for smooth navigation.",
+        "Integrated RESTful APIs and implemented server-side rendering for performance optimization.",
+        "Managed state using Context API and improved rendering with React Hooks.",
+        "Participated in daily stand-ups, sprint planning, and code reviews as part of Agile workflows.",
+      ],
+    },
+  ];
+
   const skills = [
     {
       title: "Languages",
@@ -178,9 +213,51 @@ function AboutMe() {
 
       <section className="mb-16">
         <section className="flex   gap-4  mb-8">
-          <h3 className="mb-0 tracking-wider">
+          <h2 className="mb-0 tracking-wider">
+            <span className="text-primary">#</span>exprience
+          </h2>
+        </section>
+
+        {experiences.map((item, id) => (
+          <section key={id} className="mb-16">
+            {" "}
+            <div className="flex items-center gap-5 mb-3">
+              {" "}
+              <h3 className="relative inline-block  cursor-pointer group p-2">
+                <Link href={item.link} className="cursor-pointer">
+                  <span className="text-primary">@</span>
+                  {item.company}
+                </Link>
+
+                <span className="absolute bottom-0 left-0 w-0 h-[4px] bg-primary transition-all duration-300 ease-in-out group-hover:w-full "></span>
+              </h3>{" "}
+              <Link href={item.link} className="cursor-pointer">
+                <Image src={item.logo} alt="ant img" width={50} height={50} />
+              </Link>
+            </div>
+            <h4>{item.role} </h4>
+            <p>
+              {item.location} | {item.duration}
+            </p>
+            <ul className="list-disc list-inside pl-5 space-y-1 ">
+              {item.responsibilities.map((char, id) => (
+                <li
+                  key={id}
+                  className=" mb-1 tracking-wider text-secondary-foreground"
+                >
+                  {char}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </section>
+
+      <section className="mb-16">
+        <section className="flex   gap-4  mb-8">
+          <h2 className="mb-0 tracking-wider">
             <span className="text-primary">#</span>skills
-          </h3>
+          </h2>
         </section>
 
         <section className="flex flex-col md:flex-row flex-wrap   gap-4 mb-16">
@@ -212,9 +289,9 @@ function AboutMe() {
       </section>
       <section className="mb-16">
         <section className="flex   gap-4  mb-8">
-          <h3 className="mb-0 tracking-wider">
+          <h2 className="mb-0 tracking-wider">
             <span className="text-primary">#</span>my-fun-facts
-          </h3>
+          </h2>
         </section>
 
         <section className="flex relative">
@@ -225,7 +302,7 @@ function AboutMe() {
               </div>
             ))}
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Image
               src={"logo.svg"}
               alt="logo"

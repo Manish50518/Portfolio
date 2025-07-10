@@ -28,11 +28,11 @@ function NavigationBar() {
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map(({ label, href }, i) => (
-            <Link key={i} href={href}>
+          {navLinks.map((item, i) => (
+            <Link key={i} href={item.href}>
               <h6 className="relative inline-block pb-1 cursor-pointer group">
                 <span className="text-primary font-s">#</span>
-                {label}
+                {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 ease-in-out group-hover:w-full"></span>
               </h6>
             </Link>

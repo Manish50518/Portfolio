@@ -26,7 +26,7 @@
 
   /* Secondary Colors */
   --secondary: oklch(96% 0 0);
-  --secondary-foreground: oklch(75% 0.02 220);
+  --secondary-foreground: oklch(40% 0.02 220);
   --secondary-50: oklch(98% 0 0);
   --secondary-100: oklch(96% 0 0);
   --secondary-200: oklch(92% 0 0);

@@ -35,14 +35,12 @@ function ProjectsReuseComp({ data }: ProjectsProps) {
               />
             </div>
           )}
-          <p className="p-3 text-sm text-muted-foreground border-y border-default">
+          <p className="p-3 text-sm  border-y border-default">
             {item.stack.join(", ")}
           </p>
           <div className="p-4">
             <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
-            <p className="text-sm text-muted-foreground mb-4">
-              {item.discription}
-            </p>
+            <p className="text-sm  mb-4">{item.discription}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href={item.git}>
                 <Button

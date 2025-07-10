@@ -117,7 +117,7 @@ function Skills() {
               <h5 className="border-b border-default p-3 text-base sm:text-lg font-medium">
                 {item.title}
               </h5>
-              <p className="p-3 text-sm sm:text-base text-muted-foreground">
+              <p className="p-3 text-sm sm:text-base ">
                 {item.items.join(", ")}
               </p>
             </div>
