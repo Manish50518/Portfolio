@@ -180,13 +180,40 @@ function AboutMe() {
                   </p>
                   <p>
                     Over the past year, I&apos;ve worked with companies like
-                    AntStack and Infotech Brain&apos;s, where I contributed to
-                    real-world projects using tools like Next.js, TypeScript,
-                    Tailwind CSS, AWS Amplify, and Spring Boot. I&apos;ve
-                    developed reusable and accessible UI component libraries,
-                    optimized frontend performance through efficient rendering
-                    techniques, and implemented secure authentication systems
-                    using modern best practices.
+                    AntStack{" "}
+                    <Link
+                      href={
+                        "https://www.linkedin.com/company/antstackio/posts/?feedView=all"
+                      }
+                    >
+                      <Image
+                        src={"/Symbol_dark.png"}
+                        alt="ant img"
+                        width={20}
+                        height={20}
+                        className="inline-block"
+                      />
+                    </Link>{" "}
+                    and Infotech Brain&apos;s,
+                    <Link
+                      href={
+                        "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all"
+                      }
+                    >
+                      <Image
+                        src={"/infotechbrains_logo.jpeg"}
+                        alt="ant img"
+                        width={20}
+                        height={20}
+                        className="inline-block"
+                      />{" "}
+                    </Link>
+                    where I contributed to real-world projects using tools like
+                    Next.js, TypeScript, Tailwind CSS, AWS Amplify, and Spring
+                    Boot. I&apos;ve developed reusable and accessible UI
+                    component libraries, optimized frontend performance through
+                    efficient rendering techniques, and implemented secure
+                    authentication systems using modern best practices.
                   </p>
                   <Link
                     href={"./KM_Manish_Resume.pdf"}
