@@ -20,7 +20,7 @@ function NavigationBar() {
 
   return (
     <header className="w-full px-4 py-4  mb-6">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center relative">
         <div>
           <Link href={"/"} className="hover:cursor-pointer">
             <Image src={"./mport.svg"} alt="logo" width={50} height={50} />
@@ -52,10 +52,10 @@ function NavigationBar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden mt-4 space-y-4 px-4">
+        <div className="md:hidden absolute left-0 bg-background w-full ">
           {navLinks.map(({ label, href }, i) => (
             <Link key={i} href={href} onClick={() => setIsOpen(false)}>
-              <h6 className="block border-b border-default pb-2 cursor-pointer group">
+              <h6 className="block  pb-8 text-center cursor-pointer group ">
                 <span className="text-primary font-s">#</span>
                 {label}
               </h6>
