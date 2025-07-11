@@ -173,7 +173,7 @@ function AboutMe() {
                     {" "}
                     I&apos;m a self-taught Frontend Developer based in
                     Bengaluru, India, with hands-on experience in building
-                    modern, responsive, and scalable web applications. Iam
+                    modern, responsive, and scalable web applications. I&apos;m
                     specialize in React.js, Next.js, and Tailwind CSS, and love
                     transforming creative ideas into intuitive and user-friendly
                     interfaces.

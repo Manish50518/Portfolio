@@ -63,7 +63,7 @@ function Skills() {
     <div className="mb-8 px-4 sm:px-6 md:px-8">
       <section className="flex items-center gap-4 justify-center mb-8">
         <h3 className="mb-0 tracking-wider">
-          <span className="text-primary">#</span>skils
+          <span className="text-primary">#</span>skills
         </h3>
         <div className="flex-1 h-1 bg-primary opacity-50"></div>{" "}
         <p
