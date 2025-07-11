@@ -10,7 +10,7 @@ function AboutMe() {
       role: "Frontend Developer Intern",
       location: "Bengaluru, India",
       duration: "Feb 2025 - May 2025",
-      logo: "/Symbol_dark.png",
+      logo: "/Symbol_dark.svg",
       link: "https://www.linkedin.com/company/antstackio/posts/?feedView=all",
       responsibilities: [
         "Developed and maintained scalable web applications using Next.js and TypeScript.",
@@ -27,7 +27,7 @@ function AboutMe() {
       role: "React Developer Intern",
       location: "Pune, India",
       duration: "Dec 2024 - Feb 2025",
-      logo: "/infotechbrains_logo.jpeg",
+      logo: "/infotech_logo.svg",
       link: "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all",
       responsibilities: [
         "Contributed to building responsive web applications using React.js and Next.js.",
@@ -187,30 +187,30 @@ function AboutMe() {
                       }
                     >
                       <Image
-                        src={"/Symbol_dark.png"}
+                        src={"/Symbol_dark.svg"}
                         alt="ant img"
                         width={20}
                         height={20}
                         className="inline-block"
                       />
                     </Link>{" "}
-                    and Infotech Brain&apos;s,
+                    and Infotech Brain&apos;s{" "}
                     <Link
                       href={
                         "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all"
                       }
                     >
                       <Image
-                        src={"/infotechbrains_logo.jpeg"}
+                        src={"/infotech_logo.svg"}
                         alt="ant img"
                         width={20}
                         height={20}
                         className="inline-block"
-                      />{" "}
-                    </Link>
-                    where I contributed to real-world projects using tools like
-                    Next.js, TypeScript, Tailwind CSS, AWS Amplify, and Spring
-                    Boot. I&apos;ve developed reusable and accessible UI
+                      />
+                    </Link>{" "}
+                    , where I contributed to real-world projects using tools
+                    like Next.js, TypeScript, Tailwind CSS, AWS Amplify, and
+                    Spring Boot. I&apos;ve developed reusable and accessible UI
                     component libraries, optimized frontend performance through
                     efficient rendering techniques, and implemented secure
                     authentication systems using modern best practices.
@@ -250,7 +250,7 @@ function AboutMe() {
             {" "}
             <div className="flex items-center gap-5 mb-3">
               {" "}
-              <h3 className="relative inline-block  cursor-pointer group p-2">
+              <h3 className="relative inline-block  cursor-pointer group py-2">
                 <Link href={item.link} className="cursor-pointer">
                   <span className="text-primary">@</span>
                   {item.company}

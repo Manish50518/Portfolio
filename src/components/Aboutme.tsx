@@ -45,28 +45,28 @@ function Aboutme() {
                 }
               >
                 <Image
-                  src={"/Symbol_dark.png"}
+                  src={"/Symbol_dark.svg"}
                   alt="ant img"
                   width={20}
                   height={20}
                   className="inline-block"
                 />
               </Link>{" "}
-              and Infotech Brain’s,{" "}
+              and Infotech Brain’s{" "}
               <Link
                 href={
                   "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all"
                 }
               >
                 <Image
-                  src={"/infotechbrains_logo.jpeg"}
+                  src={"/infotech_logo.svg"}
                   alt="ant img"
                   width={20}
                   height={20}
                   className="inline-block"
                 />{" "}
               </Link>{" "}
-              where I contributed to real-world projects using tools like
+              , where I contributed to real-world projects using tools like
               Next.js, TypeScript, Tailwind CSS, AWS Amplify, and Spring Boot.
               I’ve developed reusable and accessible UI component libraries,
               optimized frontend performance through efficient rendering
