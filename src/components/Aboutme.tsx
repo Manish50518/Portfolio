@@ -2,12 +2,10 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 function Aboutme() {
-  const [readMore, setReadMore] = useState(false);
   const route = useRouter();
 
   return (
@@ -26,19 +24,32 @@ function Aboutme() {
       </section>
       <div className="flex sm:flex-row flex-col items-center gap-2">
         <section className="flex-1 w-full max-w-5xl px-4 sm:px-6 md:px-8">
-          <article className="p-1 tracking-wider text-sm sm:text-base leading-relaxed space-y-4">
-            <p className="text-lg sm:text-xl font-semibold">
-              Hello, I’m Manish!
+          <article className="p-1 tracking-widest">
+            <p>Hello, I’m Manish!</p>
+            <p>
+              {" "}
+              I&apos;m a self-taught Frontend Developer based in Bengaluru,
+              India, with hands-on experience in building modern, responsive,
+              and scalable web applications. I&apos;m specialize in React.js,
+              Next.js, and Tailwind CSS, and love transforming creative ideas
+              into intuitive and user-friendly interfaces.
             </p>
             <p>
-              I’m a self-taught Frontend Developer based in Bengaluru, India,
-              with hands-on experience in building modern, responsive, and
-              scalable web applications. I’m specialize in React.js, Next.js, and
-              Tailwind CSS, and love transforming creative ideas into intuitive
-              and user-friendly interfaces.
-            </p>
-            <p>
-              Over the past year, I’ve worked with companies like AntStack{" "}
+              Over the past year, I&apos;ve worked with companies like M-Swasth{" "}
+              <Link
+                href={
+                  "https://www.linkedin.com/company/m-swasth-solutions-pvt-ltd/posts/?feedView=all"
+                }
+              >
+                <Image
+                  src={"/m-swast.png"}
+                  alt="m-swasth logo"
+                  width={20}
+                  height={20}
+                  className="inline-block"
+                />
+              </Link>
+              , AntStack{" "}
               <Link
                 href={
                   "https://www.linkedin.com/company/antstackio/posts/?feedView=all"
@@ -52,7 +63,7 @@ function Aboutme() {
                   className="inline-block"
                 />
               </Link>{" "}
-              and Infotech Brain’s{" "}
+              and Infotech Brain&apos;s{" "}
               <Link
                 href={
                   "https://www.linkedin.com/company/infotechbrains/posts/?feedView=all"
@@ -64,44 +75,22 @@ function Aboutme() {
                   width={20}
                   height={20}
                   className="inline-block"
-                />{" "}
+                />
               </Link>{" "}
               , where I contributed to real-world projects using tools like
               Next.js, TypeScript, Tailwind CSS, AWS Amplify, and Spring Boot.
-              I’ve developed reusable and accessible UI component libraries,
-              optimized frontend performance through efficient rendering
-              techniques, and implemented secure authentication systems using
-              modern best practices.
+              I&apos;ve developed reusable and accessible UI component
+              libraries, optimized frontend performance through efficient
+              rendering techniques, and implemented secure authentication
+              systems using modern best practices.
             </p>
-            {readMore && (
-              <p>
-                My focus is on building pixel-perfect, responsive UIs with
-                clean, maintainable code. Whether it’s building dynamic forms,
-                integrating REST APIs, or setting up SSR and CI/CD pipelines
-                with Next.js, I’m always eager to push the boundaries of what
-                frontend can do.
-              </p>
-            )}
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button
-                onClick={() => setReadMore(!readMore)}
-                className="bg-transparent text-foreground border border-primary-subtle rounded-none px-8 w-full sm:w-auto"
-              >
-                {readMore ? "read less" : "read more"}
-              </Button>
-
-              <Link
-                href={"/KM_Manish_Resume.pdf"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button className="rounded-none px-8 w-full sm:w-auto">
-                  View Resume
-                </Button>
-              </Link>
-            </div>
+            <Link
+              href={"./KM_Manish_Resume.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="rounded-none px-8">View Resume</Button>
+            </Link>
           </article>
         </section>
         <section className="flex-1">

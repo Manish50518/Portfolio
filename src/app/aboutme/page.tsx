@@ -6,6 +6,22 @@ import * as SiIcons from "react-icons/si";
 function AboutMe() {
   const experiences = [
     {
+      company: "M-Swasth",
+      role: "Frontend Developer",
+      location: "Bengaluru, India",
+      duration: "Jun 2025 - Present",
+      logo: "/m-swast.png",
+      link: "https://www.linkedin.com/company/m-swasth-solutions-pvt-ltd/posts/?feedView=all",
+      responsibilities: [
+        "Developed comprehensive dashboards for healthcare analytics, utilizing React and Next.js for dynamic, server-side rendered interfaces with TanStack Query for efficient data fetching, caching, and state management.",
+        "Implemented interactive data tables and forms using TanStack Table for sortable, filterable grids and TanStack Form for complex, validated user inputs, ensuring seamless CRUD operations.",
+        "Integrated Firebase for robust backend services, including Firestore for real-time database operations, Firebase Authentication for secure user management, and Firebase Analytics for tracking user engagement and performance metrics.",
+        "Designed responsive, visually engaging UIs with Tailwind CSS, incorporating parallax scrolling effects for immersive user experiences, and optimized for mobile-first accessibility across devices.",
+        "Deployed full-stack projects to Vercel, leveraging CI/CD pipelines for automated builds, previews, and production releases, resulting in zero-downtime updates and scalable hosting.",
+        "Collaborated in an Agile environment, contributing to sprint planning, code reviews, and feature iterations to deliver high-performance applications focused on user-centric healthcare solutions.",
+      ],
+    },
+    {
       company: "AntStack",
       role: "Frontend Developer Intern",
       location: "Bengaluru, India",
@@ -167,7 +183,7 @@ function AboutMe() {
             </section>
             <div className="flex md:flex-row flex-col items-center gap-2">
               <section className="flex-1 ">
-                <article className="p-1 tracking-widest ">
+                <article className="p-1 tracking-widest">
                   <p>Hello, I’m Manish!</p>
                   <p>
                     {" "}
@@ -180,7 +196,21 @@ function AboutMe() {
                   </p>
                   <p>
                     Over the past year, I&apos;ve worked with companies like
-                    AntStack{" "}
+                    M-Swasth{" "}
+                    <Link
+                      href={
+                        "https://www.linkedin.com/company/m-swasth-solutions-pvt-ltd/posts/?feedView=all"
+                      }
+                    >
+                      <Image
+                        src={"/m-swast.png"}
+                        alt="m-swasth logo"
+                        width={20}
+                        height={20}
+                        className="inline-block"
+                      />
+                    </Link>
+                    , AntStack{" "}
                     <Link
                       href={
                         "https://www.linkedin.com/company/antstackio/posts/?feedView=all"
