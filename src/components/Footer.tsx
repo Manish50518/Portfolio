@@ -23,7 +23,7 @@ function Footer() {
             <h5>Manish KM</h5>
             <p className="mb-3">kmmanish5051@gmail.com</p>
           </div>
-          <h6>Web designer and fornt-end developer</h6>
+          <h6>Web designer and frontend developer</h6>
         </section>
         <section className="">
           <h5 className="mb-3">Media</h5>
