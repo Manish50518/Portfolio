@@ -1,3 +1,6 @@
+"use client";
+
+import ProfileCard from "@/components/ProfileCard";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -181,7 +184,7 @@ function AboutMe() {
               </h2>
               <p>Who am i ?</p>
             </section>
-            <div className="flex md:flex-row flex-col items-center gap-2">
+            <div className="flex md:flex-row flex-col items-center gap-10">
               <section className="flex-1 ">
                 <article className="p-1 tracking-widest">
                   <p>Hello, I’m Manish!</p>
@@ -254,13 +257,18 @@ function AboutMe() {
                   </Link>
                 </article>
               </section>
-              <section className="flex-1">
-                {" "}
-                <Image
-                  width={700}
-                  height={700}
-                  src={"/defaultImg.svg"}
-                  alt="default image"
+              <section className="">
+                <ProfileCard
+                  name="KM Manish"
+                  title="Software Engineer"
+                  handle="manishcodes"
+                  status="Online"
+                  contactText="Contact Me"
+                  avatarUrl="/image (1).jpg"
+                  showUserInfo={true}
+                  enableTilt={true}
+                  enableMobileTilt={true}
+                  onContactClick={() => console.log("Contact clicked")}
                 />
               </section>
             </div>

@@ -2,12 +2,13 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import ProfileCard from "./ProfileCard";
 
 function Intro() {
   const route = useRouter();
   return (
     <div>
-      <div className="flex sm:flex-row flex-col items-center">
+      <div className="flex sm:flex-row flex-col items-center mb-10">
         <section>
           <h2>
             Manish is a <span className="text-primary ">web designer</span> and{" "}
@@ -24,11 +25,17 @@ function Intro() {
           </Button>
         </section>
         <section className="">
-          <Image
-            width={700}
-            height={700}
-            src={"/defaultImg.svg"}
-            alt="default image"
+          <ProfileCard
+            name="KM Manish"
+            title="Software Engineer"
+            handle="manishcodes"
+            status="Online"
+            contactText="Contact Me"
+            avatarUrl="/image (1).jpg"
+            showUserInfo={true}
+            enableTilt={true}
+            enableMobileTilt={true}
+            onContactClick={() => route.push("/contacts")}
           />
         </section>
       </div>

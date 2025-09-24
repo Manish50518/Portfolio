@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import ProfileCard from "./ProfileCard";
 
 function Aboutme() {
   const route = useRouter();
@@ -95,11 +96,17 @@ function Aboutme() {
         </section>
         <section className="flex-1">
           {" "}
-          <Image
-            width={700}
-            height={700}
-            src={"/defaultImg.svg"}
-            alt="default image"
+          <ProfileCard
+            name="KM Manish"
+            title="Software Engineer"
+            handle="manishcodes"
+            status="Online"
+            contactText="Contact Me"
+            avatarUrl="/protpng.png"
+            showUserInfo={true}
+            enableTilt={true}
+            enableMobileTilt={true}
+            onContactClick={() => console.log("Contact clicked")}
           />
         </section>
       </div>
