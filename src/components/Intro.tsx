@@ -23,7 +23,7 @@ function Intro() {
             Contact me!!
           </Button>
         </section>
-        <section className="">
+        <section className="sm:mt-0 mt-10">
           <ProfileCard
             name="KM Manish"
             title="Software Engineer"

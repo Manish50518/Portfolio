@@ -94,7 +94,7 @@ function Aboutme() {
             </Link>
           </article>
         </section>
-        <section className="flex-1">
+        <section>
           {" "}
           <ProfileCard
             name="KM Manish"
@@ -102,7 +102,7 @@ function Aboutme() {
             handle="manishcodes"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="/protpng.png"
+            avatarUrl="/image (5).png"
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={true}
