@@ -125,7 +125,9 @@ function Skills() {
           ))}
         </section>
       </section>{" "}
-      <TechSatck />
+      <section className="my-10">
+        <TechSatck />
+      </section>
     </div>
   );
 }
