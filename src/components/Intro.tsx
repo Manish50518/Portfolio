@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./Profile/ProfileCard";
 
 function Intro() {
   const route = useRouter();
@@ -14,10 +14,13 @@ function Intro() {
             <span className="text-primary ">front-end developer</span>{" "}
           </h2>
           <p>
-            He crafts responsive websites where technologies meet creativity
+            He crafts responsive and user-friendly websites where creativity
+            meets technology. With a passion for clean design, modern
+            frameworks, and smooth interactions, he transforms ideas into
+            engaging digital experiences that inspire and connect people.
           </p>
           <Button
-            className="bg-transparent text-forground border-2 border-primary-subtle rounded-b-sm"
+            className="bg-transparent text-forground border-2 border-primary-subtle rounded-sm"
             onClick={() => route.push("/contacts")}
           >
             Contact me!!
@@ -33,7 +36,7 @@ function Intro() {
             avatarUrl="/image (1).jpg"
             showUserInfo={true}
             enableTilt={true}
-            enableMobileTilt={true}
+            enableMobileTilt={false}
             onContactClick={() => route.push("/contacts")}
           />
         </section>

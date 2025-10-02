@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import TechSatck from "./TechSatck";
 
 function Skills() {
   const skills = [
@@ -60,7 +61,7 @@ function Skills() {
   const router = useRouter();
 
   return (
-    <div className="mb-8 px-4 sm:px-6 md:px-8">
+    <div className="mt-8 mb-8">
       <section className="flex items-center gap-4 justify-center mb-8">
         <h3 className="mb-0 tracking-wider">
           <span className="text-primary">#</span>skills
@@ -73,7 +74,7 @@ function Skills() {
           View all <ArrowRight className="inline-block" />
         </p>
       </section>
-      <div className="flex flex-col md:flex-row gap-6">
+      <section className="flex flex-col md:flex-row gap-6 md:gap-6 p-4 md:p-6">
         <section className="relative flex-1 hidden md:block">
           <Image
             src="/dot.svg"
@@ -123,7 +124,8 @@ function Skills() {
             </div>
           ))}
         </section>
-      </div>
+      </section>{" "}
+      <TechSatck />
     </div>
   );
 }

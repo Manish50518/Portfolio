@@ -3,7 +3,7 @@
 /* Enhanced Color System for shadcn/ui + Tailwind v4 */
 :root {
   /* Base Colors */
-  --background: oklch(94.034% 0.06213 138.74);
+  --background: oklch(95% 0.015 230);
   --fgrooreund: oklch(15% 0 0);
   --card: oklch(100% 0 0);
   --card-foreground: oklch(15% 0 0);

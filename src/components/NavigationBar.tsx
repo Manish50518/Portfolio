@@ -23,7 +23,7 @@ function NavigationBar() {
       <div className="container mx-auto flex justify-between items-center relative">
         <div>
           <Link href={"/"} className="hover:cursor-pointer">
-            <Image src={"./mport.svg"} alt="logo" width={50} height={50} />
+            <Image src={"/km.png"} alt="logo" width={70} height={70} />
           </Link>
         </div>
 

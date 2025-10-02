@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./Profile/ProfileCard";
 
 function Aboutme() {
   const route = useRouter();
@@ -106,7 +106,7 @@ function Aboutme() {
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={true}
-            onContactClick={() => console.log("Contact clicked")}
+            onContactClick={() => route.push("/contacts")}
           />
         </section>
       </div>
