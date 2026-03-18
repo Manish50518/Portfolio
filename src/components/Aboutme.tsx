@@ -105,7 +105,7 @@ function Aboutme() {
             avatarUrl="/image (5).png"
             showUserInfo={true}
             enableTilt={true}
-            enableMobileTilt={true}
+            enableMobileTilt={false}
             onContactClick={() => route.push("/contacts")}
           />
         </section>
