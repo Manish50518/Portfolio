@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider/TheamProvider";
 import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
+import SocialSidebar from "@/components/SocialSidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,13 +24,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          <SocialSidebar />
           <div className="max-w-[1024px] mx-auto p-2">
             <NavigationBar />
             {children}

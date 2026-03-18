@@ -52,7 +52,7 @@ function Freelance() {
   ];
 
   return (
-    <div className="mt-8 mb-8">
+    <div className="mt-8 mb-8 px-2 sm:px-0">
       <section className="flex items-center gap-4 justify-center mb-8">
         <h3 className="mb-0 tracking-wider">
           <span className="text-primary">#</span>projects completed
@@ -66,14 +66,14 @@ function Freelance() {
         </p> */}
       </section>
 
-      <section className="grid grid-cols-2  gap-4 md:gap-6 p-4 md:p-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-2 sm:p-4 md:p-6">
         {projects.map((item) => (
           <div
             key={item.id}
             className="border border-default  overflow-hidden shadow-sm hover:shadow-md transition-shadow"
           >
             {item.img && (
-              <div className="relative w-full h-48 sm:h-56 md:h-64">
+              <div className="relative w-full h-44 sm:h-52 md:h-64">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -83,12 +83,12 @@ function Freelance() {
                 />
               </div>
             )}
-            <p className="p-3 text-sm  border-y border-default">
+            <p className="p-2 sm:p-3 text-xs sm:text-sm border-y border-default">
               {item.stack.join(", ")}
             </p>
             <div className="p-4">
-              <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
-              <p className="text-sm  mb-4">{item.discription}</p>
+              <h5 className="text-base sm:text-lg font-semibold mb-2">{item.title}</h5>
+              <p className="text-xs sm:text-sm mb-4">{item.discription}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 {item.demo && (
                   <Link href={item.demo}>
